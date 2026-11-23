@@ -68,8 +68,12 @@ img { max-width: 100%; display: block; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(246, 248, 252, .82); backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid var(--line); }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-family: var(--font-head); font-weight: 700; font-size: 1.22rem; color: var(--ink); letter-spacing: -.02em; }
-.brand .logo { width: 34px; height: 34px; flex: none; }
+.brand .logo { width: 40px; height: 40px; flex: none; border-radius: 10px; }
 .brand b { color: var(--brand); }
+.brand-tx { display: inline-flex; flex-direction: column; line-height: 1.04; }
+.brand-tx small { font-family: var(--font-body); font-weight: 500; font-size: .58rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+.site-footer .brand .logo { width: 34px; height: 34px; }
+.site-footer .brand-tx small { color: rgba(255, 255, 255, .55); }
 .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
 .nav-links a { color: var(--muted); font-weight: 500; font-size: .96rem; padding: 9px 14px; border-radius: 999px; transition: color .15s, background .15s; }
 .nav-links a:hover { color: var(--ink); background: var(--surface-soft); }
@@ -244,3 +248,12 @@ img { max-width: 100%; display: block; }
 @keyframes fs-rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 html.js .reveal.in { animation: fs-rise .6s ease both; }
 @media (prefers-reduced-motion: reduce) { html.js .reveal.in { animation: none; } html { scroll-behavior: auto; } }
+
+/* --- Links discretos no rodapé (home) --- */
+.footer-mini { display: inline-flex; align-items: center; gap: 16px; }
+.mini-link { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; font-size: .82rem; color: rgba(255, 255, 255, .5); text-decoration: none; letter-spacing: .01em; transition: color .15s; }
+.mini-link:hover { color: rgba(255, 255, 255, .85); }
+
+/* --- Portfólio: selo "site em breve" --- */
+.work-soon { display: inline-flex; align-items: center; gap: 6px; font-size: .86rem; font-weight: 500; color: var(--muted); padding: 10px 2px; }
+.work-soon::before { content: ""; width: 7px; height: 7px; border-radius: 999px; background: var(--amber); box-shadow: 0 0 0 3px rgba(245, 158, 11, .18); }
