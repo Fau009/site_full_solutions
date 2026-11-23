@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato — FullSolutions</title>
+<meta name="description" content="Fale com a FullSolutions e comece seu projeto de site personalizado. Conte seu objetivo e a gente retorna com o melhor caminho.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="FullSolutions — início">
+      <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><rect width="48" height="48" rx="12" fill="#0a1628"/><path d="M15 13h16v5h-10v5h8v5h-8v7h-6z" fill="url(#bg)"/><circle cx="33" cy="33" r="4" fill="#f59e0b"/></svg>
+      Full<b>Solutions</b>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="produto.html">Produto</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="quem-somos.html">Quem somos</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+      <li class="nav-cta"><a class="btn btn-primary" href="contato.html">Fale conosco</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Início</a> · Contato</div>
+    <span class="eyebrow">Contato</span>
+    <h1>Vamos começar o seu projeto</h1>
+    <p class="lead">Conte seu objetivo e a gente retorna com o melhor caminho — do escopo ao site publicado.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2>Fale com a FullSolutions</h2>
+        <p class="muted">Preencha e envie — seu e-mail abre com a mensagem pronta. Ou chame direto pelos canais ao lado.</p>
+        <form id="form-contato" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+          </div>
+          <div class="field">
+            <label for="tipo">Tipo de projeto</label>
+            <select id="tipo" name="tipo">
+              <option>Página única / Landing</option>
+              <option selected>Site completo</option>
+              <option>Site + integrações</option>
+              <option>Ainda não sei / quero orientação</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Sobre o projeto</label>
+            <textarea id="msg" name="msg" placeholder="Conte um pouco sobre a sua marca e o que você precisa…"></textarea>
+          </div>
+          <button class="btn btn-primary btn-lg" type="submit">Enviar mensagem</button>
+          <p id="form-aviso" class="muted" style="margin-top:12px;font-size:.9rem" hidden></p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <div class="contact-cards">
+          <a class="contact-item" id="wpp" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.1-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9.5c0 3 2 5 5 5"/></svg></span>
+            <span><b>WhatsApp</b><span>Resposta rápida — toque para conversar</span></span>
+          </a>
+          <a class="contact-item" id="mail" href="mailto:contato@fullsolutions.com.br">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span><b>E-mail</b><span>contato@fullsolutions.com.br</span></span>
+          </a>
+          <div class="contact-item">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span><b>Atendimento</b><span>Seg a sex · retorno em até 1 dia útil</span></span>
+          </div>
+          <div class="contact-item">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span><b>Seus dados</b><span>Tratados com cuidado e nunca compartilhados</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#13233f"/><path d="M15 13h16v5h-10v5h8v5h-8v7h-6z" fill="#4f93ff"/><circle cx="33" cy="33" r="4" fill="#f59e0b"/></svg> Full<b style="color:#4f93ff">Solutions</b></div>
+        <p>Consultoria de criação de sites personalizados com a identidade da sua marca.</p>
+      </div>
+      <div class="footer-col"><h4>Navegação</h4><ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produto.html">Nosso produto</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Empresa</h4><ul>
+        <li><a href="quem-somos.html">Quem somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> FullSolutions. Todos os direitos reservados.</span>
+      <span>Feito sob medida ✦</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+// Formulário → abre o e-mail com a mensagem pronta (sem backend; dados não passam por terceiros).
+(function () {
+  var EMAIL_DESTINO = 'contato@fullsolutions.com.br'; // TODO: troque pelo e-mail real da FullSolutions
+  var form = document.getElementById('form-contato');
+  var aviso = document.getElementById('form-aviso');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nome = form.nome.value.trim(), email = form.email.value.trim(), tipo = form.tipo.value, msg = form.msg.value.trim();
+    if (!nome || !email) { aviso.hidden = false; aviso.textContent = 'Preencha nome e e-mail para continuar.'; return; }
+    var assunto = 'Novo projeto — ' + nome;
+    var corpo = 'Nome: ' + nome + '\nE-mail: ' + email + '\nTipo de projeto: ' + tipo + '\n\n' + (msg || '(sem descrição)');
+    window.location.href = 'mailto:' + EMAIL_DESTINO + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+    aviso.hidden = false; aviso.textContent = 'Abrindo seu aplicativo de e-mail com a mensagem pronta…';
+  });
+})();
+</script>
+</body>
+</html>
